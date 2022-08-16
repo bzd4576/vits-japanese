@@ -29,7 +29,7 @@
     "mel_fmin": 0.0,
     "mel_fmax": null,
     "add_blank": true,
-    "n_speakers": 3,
+    "n_speakers": 4,
     "cleaned_text": true
   },
   "model": {
@@ -50,6 +50,6 @@
     "use_spectral_norm": false,
     "gin_channels": 256
   },
-  "speakers": ["yuni", "chieru", "kuroe"],
+  "speakers": ["yuni", "chieru", "kuroe","tanhauser"],
   "symbols": ["_", ",", ".", "!", "?", "-", "A", "E", "I", "N", "O", "Q", "U", "a", "b", "d", "e", "f", "g", "h", "i", "j", "k", "m", "n", "o", "p", "r", "s", "t", "u", "v", "w", "y", "z", "\u0283", "\u02a7", "\u2193", "\u2191", " "]
 }

@@ -20,8 +20,6 @@ def text_to_sequence(text, cleaner_names):
 
   clean_text = _clean_text(text, cleaner_names)
   for symbol in clean_text:
-    if symbol not in _symbol_to_id.keys():
-      continue
     symbol_id = _symbol_to_id[symbol]
     sequence += [symbol_id]
   return sequence
@@ -34,7 +32,7 @@ def cleaned_text_to_sequence(cleaned_text):
     Returns:
       List of integers corresponding to the symbols in the text
   '''
-  sequence = [_symbol_to_id[symbol] for symbol in cleaned_text if symbol in _symbol_to_id.keys()]
+  sequence = [_symbol_to_id[symbol] for symbol in cleaned_text]
   return sequence
 
 
